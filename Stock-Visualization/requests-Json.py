@@ -1,4 +1,6 @@
 import requests
+import pandas as pd
+from pandas.io.json import json_normalize
 
 url = 'https://www.alphavantage.co/query'
 
@@ -14,5 +16,12 @@ def getData():
     resp = requests.get(url, params)
 
     data = resp.json()
-    print(data)
+
+    return data
+
+
+json_str = getData()
+
+df = pd.DataFrame.from_dict(json_normalize(json_str), orient='columns')
+print(df)
 
