@@ -9,8 +9,6 @@ class TimeRanges(Enum):
     THREE_MONTHS = "3m"
     ONE_MONTH = "1m"
     ONE_DAY = "1d"
-    CUSTOM_DATE = "Fecha en formato YYYYMMDD"
-    DYNAMIC = "dynamic"
 
     @classmethod
     def return_time_ranges(self):

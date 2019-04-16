@@ -1,6 +1,4 @@
 import requests
-import json
-from vista.vista import Vista
 
 SYMBOLS_URL = "https://api.iextrading.com/1.0/ref-data/symbols"
 GENERAL_URL = "https://api.iextrading.com/1.0"
