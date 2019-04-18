@@ -1,3 +1,3 @@
 # Data-StockMarket
 
-Prueba para commits
+Aplicaciones relacionadas con el mercado de valores
